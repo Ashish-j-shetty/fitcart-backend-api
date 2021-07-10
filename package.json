@@ -1,32 +1,34 @@
 {
-  "name": "fitube-backend",
+  "name": "fitcart-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "src/index.js",
+    "dev": "nodemon src/index.js -e js,hbs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ashish-j-shetty/fitube-backend.git"
+    "url": "git+https://github.com/Ashish-j-shetty/fitcart-backend.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ashish-j-shetty/fitube-backend/issues"
+    "url": "https://github.com/Ashish-j-shetty/fitcart-backend/issues"
   },
-  "homepage": "https://github.com/Ashish-j-shetty/fitube-backend#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  },
+  "homepage": "https://github.com/Ashish-j-shetty/fitcart-backend#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.12.11"
+    "faker": "^5.5.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.4"
+  },
+  "devDependencies": {
+    "kill-port": "^1.6.1"
   }
 }
